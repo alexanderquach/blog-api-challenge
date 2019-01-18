@@ -26,7 +26,7 @@ function runServer() {
     server = app
       .listen(port, () => {
         console.log(`Your app is listneing on port ${port}`);
-        resolver(server);
+        resolve(server);
       })
       .on('error', err => {
         reject(err);
